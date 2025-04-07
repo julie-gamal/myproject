@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.container {
+  position: relative;
+  width: 850px;
+  height: 550px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.container .form-container {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container .signin-container {
+  right: 0;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.container .signup-container {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.container.active .signin-container {
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 0;
+}
+
+.container.active .signup-container {
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 5;
+}
+
+.container .form-container form {
+  width: 100%;
+  padding: 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container form h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 13px 50px 13px 20px;
+  background: #e2e2e2;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-box input::placeholder {
+  color: #888;
+  font-weight: 400;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+}
+/* Date of Birth Container */
+.input-box.date-of-birth {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+/* Label Styling */
+.input-box.date-of-birth label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Date Input Styling */
+.input-box.date-of-birth input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Align Icon Properly */
+.input-box.date-of-birth i {
+  position: absolute;
+  right: 15px;
+  top: 60%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+.forgot-link {
+  width: 100%;
+  margin: -5px 0 15px;
+  text-align: right;
+}
+
+.forgot-link a {
+  font-size: 14.5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  background: #f5d5cb;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+form p {
+  font-size: 14.5px;
+  margin: 15px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.toggle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("../img/login.webp") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 0 0 30px;
+  transition: 0.5s;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+
+.container.active .toggle-container {
+  left: 50%; /* Changed from left: 0 to left: 50% */
+  border-radius: 0 30px 30px 0; /* Changed from 30px 0 0 30px to 0 30px 30px 0 */
+}
+
+.toggle-panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+  pointer-events: auto;
+}
+
+.toggle-panel h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.565);
+
+  padding: 10px;
+}
+
+.toggle-panel p {
+  font-size: 14.5px;
+  margin-bottom: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.565);
+  padding: 10px;
+}
+
+.toggle-panel .btn {
+  background: black;
+  border: 2px solid black;
+  width: 160px;
+  color: white;
+}
+
+.toggle-left {
+  transform: translateX(0); /* Changed from -100% to 0 */
+  opacity: 1; /* Changed from 0 to 1 */
+}
+
+.toggle-right {
+  transform: translateX(100%); /* Changed from 0 to 100% */
+  opacity: 0; /* Changed from 1 to 0 */
+}
+
+.container.active .toggle-left {
+  transform: translateX(-100%); /* Changed from 0 to -100% */
+  opacity: 0; /* Changed from 1 to 0 */
+}
+
+.container.active .toggle-right {
+  transform: translateX(0); /* Changed from 100% to 0 */
+  opacity: 1; /* Changed from 0 to 1 */
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Registration Form</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container signin-container">
+        <form>
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="email" placeholder="Email" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Password"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+            <i
+              class="bx bx-hide"
+              id="loginTogglePassword"
+              style="
+                position: absolute;
+                right: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+              "
+            ></i>
+          </div>
+          <div class="forgot-link">
+            <a href="forgot_password.html">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <p>or login with social platforms</p>
+          <div class="social-icons">
+            <a href="https://accounts.google.com/signin" target="_blank"
+              ><i class="bx bxl-google"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-container signup-container">
+        <form>
+          <h1>Registration</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Email" required />
+            <i class="bx bxs-envelope"></i>
+          </div>
+          <div class="input-box date-of-birth">
+            <input type="date" id="dob" required/>
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="Password"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+            <i
+              class="bx bx-hide"
+              id="registerTogglePassword"
+              style="
+                position: absolute;
+                right: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+              "
+            ></i>
+          </div>
+          <button type="submit" class="btn" style="height: 100px;">Register</button>
+          <p>or register with social platforms</p>
+          <div class="social-icons">
+            <a href="https://accounts.google.com/signin" target="_blank"
+              ><i class="bx bxl-google"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle-panel toggle-left">
+          <h1><b>Hello,Welcome!</b></h1>
+          <p><b>Don't have an account!</b></p>
+          <button class="btn" id="register">Register</button>
+        </div>
+
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome Back!</h1>
+          <p><b>Already have an account</b></p>
+          <button class="btn" id="login">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
