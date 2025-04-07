@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Recipes</title>
+
+    <link href="./css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Recipes</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./login.html">login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="image-container">
+      <img
+        alt="Header Image"
+        class="header-image"
+        src="https://www.simplyrecipes.com/thmb/g0QPVvawRfJIrlq09rn2cHKQpdk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Most-Popular-Recipes-Feature-LEAD-04-b4cc7e7bcfbe486586053a8e0a927d2f.jpg"
+      />
+      <div class="overlay-text">A very popular Greek chicken gyros</div>
+    </div>
+    <h2 class="section-title">Egyptian Recipes</h2>
+    <div class="scroll-container">
+      <div class="recipe-card" onclick="openNewWindowTaameya()">
+        <img
+          alt="Ta'ameya"
+          src="https://www.allrecipes.com/thmb/fKbVWsinzdkCn3brNykpN2tGG0U=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3841093-taameya-egyptian-falafel-Christina-4x3-1-d2303bbfa77c401cbd463df0c2995010.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Ta'ameya</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowKoshary()">
+        <img
+          alt="Egyptian Koshary"
+          src="https://www.allrecipes.com/thmb/xc9cbeZpiNmzmDuNytAW-Dangvc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4500199-dd141197b734483c97e454238e65cb09.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Koshary</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowLentilSoup()">
+        <img
+          alt="Egyptian Lentil Soup"
+          src="https://www.allrecipes.com/thmb/vUznbsSyspQ8ebMz6LFvSsOVBHI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/5196784-egyptian-lentil-soup-Marieta-Alina-Florea-4x3-1-280dd5a4ab17494f824c2cb34a86076d.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Lentil Soup</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowBamia()">
+        <img
+          alt="Egyptian Bamia"
+          src="https://www.allrecipes.com/thmb/MqGAyC-Rjo_J0MW48N_AYD2nBQM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3840150-0dbe6fae8bbb41d18e5dc308ba47e087.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Bamia</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowUmmAli()">
+        <img
+          alt="Umm Ali"
+          src="https://www.allrecipes.com/thmb/XIlkofuflLqUqZ8HvZVG3m20Te4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/59549-ac2eee30fce94ee2b65f57c772f81f1a.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Umm Ali</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowBabaGanoush()">
+        <img
+          alt="Baba Ganoush"
+          src="https://amiraspantry.com/wp-content/uploads/2020/08/baba-ghanoush-I-1024x1024.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Baba Ganoush</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowWarakEnab()">
+        <img
+          alt="Warak Enab"
+          src="https://amiraspantry.com/wp-content/uploads/2021/10/Stuffed-grape-leaves-recipe-I-1024x1536.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Warak Enab</div>
+      </div>
+    </div>
+    <h2 class="section-title">Italian Recipes</h2>
+    <div class="scroll-container">
+      <div
+        class="recipe-card"
+        onclick="openNewWindowCreamyTuscanWhiteBeanSkillet()"
+      >
+        <img
+          alt="Creamy Tuscan White Bean Skillet"
+          src="https://www.allrecipes.com/thmb/Er42_ZsBGqmyKLXSZrB4CmCy4Cs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8769362-Creamy-Tuscan-White-Bean-Skillet-ddmfs-Beauty-10491-630805bfa81c4de5a5cc6c8f55f9ce35.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Creamy Tuscan White Bean Skillet</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowRomanStylePizza()">
+        <img
+          alt="Roman-Style Pizza"
+          src="https://www.allrecipes.com/thmb/gnm-EiMlzutls7qHCc69U3n7MTQ=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8771243_Roman-Style-Pizza_John-Mitzewich_4x3-5156fcec18e446e7acd4195b97e12467.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Roman-Style Pizza</div>
+      </div>
+      <div
+        class="recipe-card"
+        onclick="openNewWindowPappardellewithJammyOnionRagu()"
+      >
+        <img
+          alt="Pappardelle with Jammy Onion Ragu"
+          src="https://www.allrecipes.com/thmb/95uHv4-2uh1PAxMLVV82Pe7OkDE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8741109-Pappardelle-with-Jammy-Onion-Ragu-Allrecipes-Magazine-4x3-8d45e74b928141ab96dbff8344473d87.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Pappardelle with Jammy Onion Ragu</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowShortRibsPizzaiola()">
+        <img
+          alt="Short Ribs Pizzaiola"
+          src="https://www.allrecipes.com/thmb/eqYdq5YdkbxsM63vraX71Q6qFmo=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/IMG_5064-4x3-d0b3e095905f435c962bbfea2360249b.JPG"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Short Ribs Pizzaiola</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowRealItalianCalzones()">
+        <img
+          alt="Real Italian Calzones"
+          src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2023%2F01%2F31%2F18874-Real-Italian-Calzones-ddmfs-127-4x3-1.jpg&amp;q=60&amp;c=sc&amp;poi=auto&amp;orient=true&amp;h=512"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Real Italian Calzones</div>
+      </div>
+      <div
+        class="recipe-card"
+        onclick="openNewWindowBruschettawithMozzarella()"
+      >
+        <img
+          alt="Bruschetta with Mozzarella"
+          src="https://www.allrecipes.com/thmb/1ZQjH4qSO8r6TDz06eXxJt0QsJk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7505113_Bruschetta-with-Mozzarella_lutzflcat_4x3-91896e6134494719aeac03fb9692d41a.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Bruschetta with Mozzarella</div>
+      </div>
+    </div>
+    <h2 class="section-title">Asian Recipes</h2>
+    <div class="scroll-container">
+      <div class="recipe-card" onclick="openNewWindowMurghKari()">
+        <img
+          alt="Murgh Kari"
+          src="https://www.allrecipes.com/thmb/_238v3Z3GOGfCS22OANdCvHFHmk=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/212721-indian-chicken-curry-murgh-kari-DDMFS-4x3-330302d59ca64543b3d7ead88c226f9a.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Murgh Kari</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowShrimpBiryani()">
+        <img
+          alt="Shrimp Biryani"
+          src="https://www.allrecipes.com/thmb/U-JcDrKib1ov3UXQn4L1NCZ69AI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8679342-shrimp-biryani-ddmfs-2553-beauty-4x3-869ec248662a4754b1a226b9e6d5b05a.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Shrimp Biryani</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowAirFryerSamosas()">
+        <img
+          alt="Air Fryer Samosas"
+          src="https://www.allrecipes.com/thmb/_eY7NPFMlupVUgZ7dZBILmui7fk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7510128-air-fryer-samosas-BP_M7009192_R307417_7810-1-4x3-a862c799d09a4701a609bbae55fce7fe.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Air Fryer Samosas</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowTandooriChicken()">
+        <img
+          alt="Tandoori Chicken"
+          src="https://www.allrecipes.com/thmb/vajnGE6AAPOlbkBurGXML7ptfqM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/50347-indian-tandoori-chicken-DDMFS-4x3-3035-205e98c80b2f4275b5bd010c396d9149.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Tandoori Chicken</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowBasmatiRice()">
+        <img
+          alt="Basmati Rice"
+          src="https://www.allrecipes.com/thmb/A5S4RsbPDhg7hJ7sqj07I5vYsGM=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-72349-Indian-Style-Basmati-Rice-DDMFS-4x3-795ff404c246454d93094c2191d0983b.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Basmati Rice</div>
+      </div>
+      <div class="recipe-card" onclick="openNewWindowChiliGarlicPaneer()">
+        <img
+          alt="Chili Garlic Paneer"
+          src="https://www.allrecipes.com/thmb/VJrzMgJjbGlisgE1rbu8wI8ir9I=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7483649ChiliGarlicPaneerchefJohn4x3-c6653bb06f114d19be76de957cec2874.jpg"
+          style="width: 200px; height: 150px; object-fit: cover"
+        />
+        <div class="recipe-title">Chili Garlic Paneer</div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    
+  </body>
+</html>
