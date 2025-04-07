@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+
+  header {
+    background-color: rgba(245, 213, 203, 0.8);
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .user-management {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .user-management input {
+    padding: 10px;
+    width: 200px;
+  }
+
+  .user-management button {
+    padding: 10px;
+    background-color: rgba(245, 213, 203, 0.8);
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  #adminList {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  #adminList li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #adminList button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }.footer_area {
+    background-color: #fff;
+    padding: 60px 0;
+    box-shadow: 0 -8px 48px 8px rgba(47, 91, 234, 0.075);
+    margin-top: auto;
+}
+
+.single-footer-widget {
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.footer_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer_menu li {
+    margin-bottom: 0.8rem;
+}
+
+.footer_menu a {
+    color: #747794;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_menu a:hover {
+    color: #3f43fd;
+}
+
+.footer_social_area a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5ff;
+    margin-right: 10px;
+    color: #747794;
+    transition: all 0.3s;
+}
+
+.footer_social_area a:hover {
+    background-color: #3f43fd;
+    color: white;
+}
+
+.copywrite-text {
+    color: #747794;
+    font-size: 0.9rem;
+}
+
+.copywrite-text a {
+    color: #747794;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.copywrite-text a:hover {
+    color: #3f43fd;
+}
